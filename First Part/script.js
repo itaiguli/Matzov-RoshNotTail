@@ -1,4 +1,5 @@
 // Written by Itai Gu
+
 Array.prototype.count = function(item = false) {
 	if (!item) return this.length;
 	let count = 0;
